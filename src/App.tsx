@@ -8,6 +8,7 @@ import Patients from "./pages/Patients";
 import Physicians from "./pages/Physicians";
 import AttorneyPortal from "./pages/AttorneyPortal";
 import NotFound from "./pages/NotFound";
+import ABQMRIWidget from "./components/ABQMRIWidget";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,8 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        {/* Global ABQ MRI Widget */}
+        <ABQMRIWidget />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

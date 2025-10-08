@@ -9,15 +9,45 @@ const Hero = () => {
         {/* Premium Royal Overlay with Sophisticated Depth */}
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900/20 via-slate-800/30 to-slate-900/20 backdrop-blur-[1px]" />
         
-        {/* Royal Gold Accent Lines */}
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-amber-400/60 to-transparent" />
-        <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-amber-400/60 to-transparent" />
+        {/* Sophisticated Radial Gradients */}
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-radial from-amber-400/5 via-transparent to-transparent rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-radial from-teal-400/5 via-transparent to-transparent rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
         
-        {/* Premium Corner Accents */}
-        <div className="absolute top-8 left-8 w-16 h-16 border-l-2 border-t-2 border-amber-400/40 rounded-tl-lg" />
-        <div className="absolute top-8 right-8 w-16 h-16 border-r-2 border-t-2 border-amber-400/40 rounded-tr-lg" />
-        <div className="absolute bottom-8 left-8 w-16 h-16 border-l-2 border-b-2 border-amber-400/40 rounded-bl-lg" />
-        <div className="absolute bottom-8 right-8 w-16 h-16 border-r-2 border-b-2 border-amber-400/40 rounded-br-lg" />
+        {/* Royal Gold Accent Lines with Animation */}
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-amber-400/60 to-transparent animate-pulse" />
+        <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-amber-400/60 to-transparent animate-pulse" style={{ animationDelay: '1s' }} />
+        
+        {/* Premium Corner Accents with Glow Effects */}
+        <div className="absolute top-8 left-8 w-16 h-16 border-l-2 border-t-2 border-amber-400/40 rounded-tl-lg shadow-lg shadow-amber-400/20 animate-pulse" />
+        <div className="absolute top-8 right-8 w-16 h-16 border-r-2 border-t-2 border-amber-400/40 rounded-tr-lg shadow-lg shadow-amber-400/20 animate-pulse" style={{ animationDelay: '0.5s' }} />
+        <div className="absolute bottom-8 left-8 w-16 h-16 border-l-2 border-b-2 border-amber-400/40 rounded-bl-lg shadow-lg shadow-amber-400/20 animate-pulse" style={{ animationDelay: '1.5s' }} />
+        <div className="absolute bottom-8 right-8 w-16 h-16 border-r-2 border-b-2 border-amber-400/40 rounded-br-lg shadow-lg shadow-amber-400/20 animate-pulse" style={{ animationDelay: '2s' }} />
+        
+        {/* Floating Particles with Sophisticated Movement */}
+        <div className="absolute inset-0">
+          {[...Array(12)].map((_, i) => (
+            <div
+              key={`floating-${i}`}
+              className="absolute w-2 h-2 bg-amber-400/30 rounded-full animate-premium-float"
+              style={{
+                left: `${10 + (i * 8)}%`,
+                top: `${20 + (i * 6)}%`,
+                animationDelay: `${i * 0.3}s`,
+                animationDuration: `${4 + (i * 0.2)}s`
+              }}
+            />
+          ))}
+        </div>
+        
+        {/* Sophisticated Grid Overlay */}
+        <div className="absolute inset-0 opacity-10" style={{
+          backgroundImage: `
+            linear-gradient(90deg, rgba(251, 191, 36, 0.1) 1px, transparent 1px),
+            linear-gradient(rgba(251, 191, 36, 0.1) 1px, transparent 1px)
+          `,
+          backgroundSize: '40px 40px',
+          animation: 'grid-move 20s linear infinite'
+        }} />
         
         {/* Advanced Orange & Teal Scan Lines */}
         <div className="absolute w-full h-3 bg-gradient-to-r from-transparent via-orange-500/70 to-transparent animate-mri-orange-scan" style={{ transform: 'rotateX(60deg)' }} />
@@ -171,37 +201,60 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Premium Royal Heading */}
-            <div className="space-y-6 md:space-y-8 max-w-5xl">
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight">
-                <span className="block text-white drop-shadow-2xl">Superior Quality &</span>
-                <span className="block bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 bg-clip-text text-transparent drop-shadow-2xl">
-                  Unrivaled Service
+            {/* Premium Royal Heading with Sophisticated Typography */}
+            <div className="space-y-8 md:space-y-10 max-w-6xl">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[1.05] tracking-tight">
+                <span className="block text-white drop-shadow-2xl hover:drop-shadow-amber-400/50 transition-all duration-700 cursor-default group">
+                  <span className="inline-block group-hover:scale-105 transition-transform duration-500">Superior</span>
+                  <span className="inline-block mx-4 text-amber-400 group-hover:text-amber-300 transition-colors duration-500">Quality</span>
+                  <span className="inline-block group-hover:scale-105 transition-transform duration-500">&</span>
                 </span>
-                <span className="block text-white drop-shadow-2xl">You Can Depend On!</span>
+                <span className="block bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 bg-clip-text text-transparent drop-shadow-2xl hover:from-amber-300 hover:via-amber-200 hover:to-amber-400 transition-all duration-700 cursor-default group">
+                  <span className="inline-block group-hover:scale-105 transition-transform duration-500">Unrivaled</span>
+                  <span className="inline-block mx-4 group-hover:scale-110 transition-transform duration-500">Service</span>
+                </span>
+                <span className="block text-white drop-shadow-2xl hover:drop-shadow-amber-400/50 transition-all duration-700 cursor-default group">
+                  <span className="inline-block group-hover:scale-105 transition-transform duration-500">You Can</span>
+                  <span className="inline-block mx-4 text-amber-400 group-hover:text-amber-300 transition-colors duration-500">Depend</span>
+                  <span className="inline-block group-hover:scale-105 transition-transform duration-500">On!</span>
+                </span>
               </h1>
               
-              <p className="text-xl md:text-2xl text-slate-300 max-w-3xl leading-relaxed font-light tracking-wide">
-                Cutting-edge technology, the most knowledgeable physicians and radiologists, and fast accurate reports is what defines 
-                <span className="text-amber-400 font-semibold"> ABQ MRI</span>.
-              </p>
+              <div className="relative">
+                <p className="text-xl md:text-2xl lg:text-3xl text-slate-300 max-w-4xl leading-relaxed font-light tracking-wide">
+                  Cutting-edge technology, the most knowledgeable physicians and radiologists, and fast accurate reports is what defines 
+                  <span className="relative inline-block text-amber-400 font-bold group cursor-default">
+                    <span className="relative z-10"> ABQ MRI</span>
+                    <div className="absolute inset-0 bg-amber-400/20 rounded-lg blur-sm group-hover:bg-amber-400/30 transition-all duration-500" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-amber-400/10 to-amber-500/10 rounded-lg animate-pulse" />
+                  </span>.
+                </p>
+                
+                {/* Sophisticated Underline Animation */}
+                <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-amber-400 to-amber-500 rounded-full animate-pulse" style={{ animationDelay: '2s' }} />
+              </div>
             </div>
 
-            {/* Premium Royal CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-6 pt-8">
-              <Button size="lg" variant="hero" className="group relative overflow-hidden bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-white font-bold px-10 py-6 text-xl rounded-2xl shadow-2xl shadow-amber-500/30 hover:shadow-amber-400/40 transition-all duration-500 hover:scale-105 w-full sm:w-auto">
-                <span className="relative z-10 flex items-center gap-3">
-                  Schedule A Consultation
-                  <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" />
+            {/* Premium Royal CTA Buttons with Sophisticated Interactions */}
+            <div className="flex flex-col sm:flex-row gap-8 pt-10">
+              <Button size="lg" variant="hero" className="group relative overflow-hidden bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-white font-bold px-12 py-8 text-xl rounded-3xl shadow-2xl shadow-amber-500/30 hover:shadow-amber-400/50 transition-all duration-700 hover:scale-110 hover:-translate-y-1 w-full sm:w-auto">
+                <span className="relative z-10 flex items-center gap-4">
+                  <span className="group-hover:tracking-wider transition-all duration-500">Schedule A Consultation</span>
+                  <ArrowRight className="w-6 h-6 group-hover:translate-x-3 group-hover:scale-110 transition-all duration-500" />
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute -inset-1 bg-gradient-to-r from-amber-400 to-amber-500 rounded-3xl blur opacity-0 group-hover:opacity-75 transition-opacity duration-700" />
               </Button>
-              <Button size="lg" variant="logo" className="group relative overflow-hidden bg-gradient-to-r from-slate-700 to-slate-800 hover:from-slate-600 hover:to-slate-700 text-white font-bold px-10 py-6 text-xl rounded-2xl border border-amber-400/30 hover:border-amber-400/60 shadow-2xl shadow-slate-800/30 hover:shadow-slate-700/40 transition-all duration-500 hover:scale-105 w-full sm:w-auto">
-                <span className="relative z-10 flex items-center gap-3">
-                  <Calendar className="w-6 h-6" />
-                  Contact Us Today
+              
+              <Button size="lg" variant="logo" className="group relative overflow-hidden bg-gradient-to-r from-slate-700 to-slate-800 hover:from-slate-600 hover:to-slate-700 text-white font-bold px-12 py-8 text-xl rounded-3xl border border-amber-400/30 hover:border-amber-400/70 shadow-2xl shadow-slate-800/30 hover:shadow-slate-700/50 transition-all duration-700 hover:scale-110 hover:-translate-y-1 w-full sm:w-auto">
+                <span className="relative z-10 flex items-center gap-4">
+                  <Calendar className="w-6 h-6 group-hover:rotate-12 transition-transform duration-500" />
+                  <span className="group-hover:tracking-wider transition-all duration-500">Contact Us Today</span>
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-amber-400/10 to-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-r from-amber-400/10 to-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute -inset-1 bg-gradient-to-r from-amber-400/20 to-amber-500/20 rounded-3xl blur opacity-0 group-hover:opacity-50 transition-opacity duration-700" />
               </Button>
             </div>
 

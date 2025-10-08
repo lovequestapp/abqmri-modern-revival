@@ -415,6 +415,34 @@ export default {
             transform: "rotateX(60deg) scaleY(1.3)",
           },
         },
+        "grid-move": {
+          "0%": { 
+            transform: "translateX(0) translateY(0)",
+          },
+          "100%": { 
+            transform: "translateX(40px) translateY(40px)",
+          },
+        },
+        "sophisticated-glow": {
+          "0%, 100%": { 
+            opacity: "0.3",
+            transform: "scale(1)",
+          },
+          "50%": { 
+            opacity: "0.8",
+            transform: "scale(1.1)",
+          },
+        },
+        "premium-float": {
+          "0%, 100%": { 
+            transform: "translateY(0px) rotate(0deg)",
+            opacity: "0.4",
+          },
+          "50%": { 
+            transform: "translateY(-20px) rotate(180deg)",
+            opacity: "0.8",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -450,6 +478,9 @@ export default {
         "mri-teal-glow": "mri-teal-glow 4s ease-in-out infinite",
         "mri-data-stream": "mri-data-stream 4s ease-out infinite",
         "mri-magnetic-field": "mri-magnetic-field 3s ease-in-out infinite",
+        "grid-move": "grid-move 20s linear infinite",
+        "sophisticated-glow": "sophisticated-glow 3s ease-in-out infinite",
+        "premium-float": "premium-float 4s ease-in-out infinite",
       },
     },
   },
