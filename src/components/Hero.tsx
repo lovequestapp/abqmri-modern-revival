@@ -3,11 +3,21 @@ import { ArrowRight, Calendar, Shield, Clock, CheckCircle2, Activity, Star, MapP
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-teal-50 to-slate-100 pt-16 md:pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 pt-16 md:pt-20">
       {/* Advanced MRI Scanner Animation with Teal Elements */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
-        {/* Enhanced White Overlay with Depth */}
-        <div className="absolute inset-0 bg-white/10 backdrop-blur-[0.5px]" />
+        {/* Premium Royal Overlay with Sophisticated Depth */}
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/20 via-slate-800/30 to-slate-900/20 backdrop-blur-[1px]" />
+        
+        {/* Royal Gold Accent Lines */}
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-amber-400/60 to-transparent" />
+        <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-amber-400/60 to-transparent" />
+        
+        {/* Premium Corner Accents */}
+        <div className="absolute top-8 left-8 w-16 h-16 border-l-2 border-t-2 border-amber-400/40 rounded-tl-lg" />
+        <div className="absolute top-8 right-8 w-16 h-16 border-r-2 border-t-2 border-amber-400/40 rounded-tr-lg" />
+        <div className="absolute bottom-8 left-8 w-16 h-16 border-l-2 border-b-2 border-amber-400/40 rounded-bl-lg" />
+        <div className="absolute bottom-8 right-8 w-16 h-16 border-r-2 border-b-2 border-amber-400/40 rounded-br-lg" />
         
         {/* Advanced Orange & Teal Scan Lines */}
         <div className="absolute w-full h-3 bg-gradient-to-r from-transparent via-orange-500/70 to-transparent animate-mri-orange-scan" style={{ transform: 'rotateX(60deg)' }} />
@@ -147,85 +157,98 @@ const Hero = () => {
         <div className="max-w-6xl mx-auto">
           {/* Main Content - Left Aligned */}
           <div className="text-left space-y-6 md:space-y-8 animate-fade-in">
-            {/* Professional Badge */}
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-white/80 border border-primary/30 rounded-full backdrop-blur-md shadow-lg">
-              <Activity className="w-5 h-5 text-primary animate-pulse" />
-              <span className="text-sm font-bold text-primary">State-of-the-Art MRI Technology</span>
+            {/* Premium Royal Badge */}
+            <div className="inline-flex items-center gap-4 px-8 py-4 bg-gradient-to-r from-slate-800/90 via-slate-700/90 to-slate-800/90 border border-amber-400/30 rounded-2xl backdrop-blur-xl shadow-2xl shadow-amber-400/20 hover:shadow-amber-400/30 transition-all duration-500 group">
+              <div className="relative">
+                <Activity className="w-6 h-6 text-amber-400 animate-pulse" />
+                <div className="absolute inset-0 bg-amber-400/20 rounded-full blur-md animate-ping" />
+              </div>
+              <span className="text-sm font-bold text-amber-400 tracking-wide uppercase">State-of-the-Art MRI Technology</span>
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3 h-3 text-yellow-500 fill-current" />
+                  <Star key={i} className="w-4 h-4 text-amber-400 fill-current animate-pulse" style={{ animationDelay: `${i * 0.1}s` }} />
                 ))}
               </div>
             </div>
 
-            {/* Main Heading */}
-            <div className="space-y-4 md:space-y-6 max-w-4xl">
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.2] tracking-tight text-slate-800">
-                <span className="text-slate-800">Superior Quality &</span>
-                <br />
-                <span className="text-primary">Unrivaled Service</span>
-                <br />
-                <span className="text-slate-800">You Can Depend On!</span>
+            {/* Premium Royal Heading */}
+            <div className="space-y-6 md:space-y-8 max-w-5xl">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight">
+                <span className="block text-white drop-shadow-2xl">Superior Quality &</span>
+                <span className="block bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 bg-clip-text text-transparent drop-shadow-2xl">
+                  Unrivaled Service
+                </span>
+                <span className="block text-white drop-shadow-2xl">You Can Depend On!</span>
               </h1>
               
-              <p className="text-lg md:text-xl text-slate-600 max-w-2xl leading-relaxed">
-                Cutting edge technology, the most knowledgeable physicians and radiologists, and fast accurate reports is what defines ABQ MRI.
+              <p className="text-xl md:text-2xl text-slate-300 max-w-3xl leading-relaxed font-light tracking-wide">
+                Cutting-edge technology, the most knowledgeable physicians and radiologists, and fast accurate reports is what defines 
+                <span className="text-amber-400 font-semibold"> ABQ MRI</span>.
               </p>
             </div>
 
-            {/* CTA Buttons - Left Aligned */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" variant="hero" className="gap-3 group px-8 py-6 text-lg font-semibold w-full sm:w-auto">
-                Schedule A Consultation
-                <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
+            {/* Premium Royal CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-6 pt-8">
+              <Button size="lg" variant="hero" className="group relative overflow-hidden bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-white font-bold px-10 py-6 text-xl rounded-2xl shadow-2xl shadow-amber-500/30 hover:shadow-amber-400/40 transition-all duration-500 hover:scale-105 w-full sm:w-auto">
+                <span className="relative z-10 flex items-center gap-3">
+                  Schedule A Consultation
+                  <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" />
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </Button>
-              <Button size="lg" variant="logo" className="gap-3 px-8 py-6 text-lg font-semibold w-full sm:w-auto">
-                <Calendar className="w-6 h-6" />
-                Contact Us Today
+              <Button size="lg" variant="logo" className="group relative overflow-hidden bg-gradient-to-r from-slate-700 to-slate-800 hover:from-slate-600 hover:to-slate-700 text-white font-bold px-10 py-6 text-xl rounded-2xl border border-amber-400/30 hover:border-amber-400/60 shadow-2xl shadow-slate-800/30 hover:shadow-slate-700/40 transition-all duration-500 hover:scale-105 w-full sm:w-auto">
+                <span className="relative z-10 flex items-center gap-3">
+                  <Calendar className="w-6 h-6" />
+                  Contact Us Today
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-amber-400/10 to-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </Button>
             </div>
 
-            {/* Contact Info Widgets */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 md:pt-8">
-              <div className="flex items-center gap-3 px-6 py-4 bg-white/80 backdrop-blur-sm rounded-xl border border-slate-200 hover:border-primary/50 transition-all duration-300 shadow-lg">
-                <div className="w-12 h-12 bg-gradient-logo rounded-xl flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-white" />
+            {/* Premium Royal Contact Widgets */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-8">
+              <div className="group flex items-center gap-4 px-8 py-6 bg-gradient-to-r from-slate-800/90 via-slate-700/90 to-slate-800/90 backdrop-blur-xl rounded-2xl border border-amber-400/20 hover:border-amber-400/40 transition-all duration-500 shadow-2xl shadow-slate-900/30 hover:shadow-amber-400/20 hover:scale-105">
+                <div className="relative w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl flex items-center justify-center shadow-lg shadow-amber-500/30">
+                  <MapPin className="w-8 h-8 text-white" />
+                  <div className="absolute inset-0 bg-amber-400/20 rounded-2xl blur-md animate-pulse" />
                 </div>
                 <div>
-                  <p className="text-slate-800 font-semibold text-lg">Location</p>
-                  <p className="text-slate-600 text-sm">4630 Jefferson LN NE Suite B</p>
-                  <p className="text-slate-600 text-sm">Albuquerque, NM 87109</p>
+                  <p className="text-white font-bold text-xl mb-2">Location</p>
+                  <p className="text-slate-300 text-base font-medium">4630 Jefferson LN NE Suite B</p>
+                  <p className="text-slate-300 text-base font-medium">Albuquerque, NM 87109</p>
                 </div>
               </div>
               
-              <div className="flex items-center gap-3 px-6 py-4 bg-white/80 backdrop-blur-sm rounded-xl border border-slate-200 hover:border-primary/50 transition-all duration-300 shadow-lg">
-                <div className="w-12 h-12 bg-gradient-logo rounded-xl flex items-center justify-center">
-                  <Phone className="w-6 h-6 text-white" />
+              <div className="group flex items-center gap-4 px-8 py-6 bg-gradient-to-r from-slate-800/90 via-slate-700/90 to-slate-800/90 backdrop-blur-xl rounded-2xl border border-amber-400/20 hover:border-amber-400/40 transition-all duration-500 shadow-2xl shadow-slate-900/30 hover:shadow-amber-400/20 hover:scale-105">
+                <div className="relative w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl flex items-center justify-center shadow-lg shadow-amber-500/30">
+                  <Phone className="w-8 h-8 text-white" />
+                  <div className="absolute inset-0 bg-amber-400/20 rounded-2xl blur-md animate-pulse" />
                 </div>
                 <div>
-                  <p className="text-slate-800 font-semibold text-lg">Phone</p>
-                  <p className="text-slate-600 text-sm">(505) 501-7541</p>
-                  <p className="text-primary text-sm font-medium">Call Now</p>
+                  <p className="text-white font-bold text-xl mb-2">Phone</p>
+                  <p className="text-slate-300 text-base font-medium">(505) 501-7541</p>
+                  <p className="text-amber-400 text-base font-bold">Call Now</p>
                 </div>
               </div>
             </div>
 
 
-            {/* Key Features */}
-            <div className="flex flex-wrap gap-4 pt-6 md:pt-8">
+            {/* Premium Royal Key Features */}
+            <div className="flex flex-wrap gap-6 pt-8">
               {[
-                { icon: Shield, text: "Board Certified Radiologists" },
-                { icon: Clock, text: "Same-Day Results Available" },
-                { icon: CheckCircle2, text: "All Insurance Accepted" },
+                { icon: Shield, text: "Board Certified Radiologists", color: "from-emerald-500 to-emerald-600" },
+                { icon: Clock, text: "Same-Day Results Available", color: "from-blue-500 to-blue-600" },
+                { icon: CheckCircle2, text: "All Insurance Accepted", color: "from-green-500 to-green-600" },
               ].map((feature, index) => (
                 <div 
                   key={index} 
-                  className="group flex items-center gap-3 px-4 py-3 bg-white/80 backdrop-blur-md rounded-xl border border-slate-200 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20"
+                  className="group flex items-center gap-4 px-6 py-4 bg-gradient-to-r from-slate-800/90 via-slate-700/90 to-slate-800/90 backdrop-blur-xl rounded-2xl border border-amber-400/20 hover:border-amber-400/40 transition-all duration-500 hover:scale-105 shadow-2xl shadow-slate-900/30 hover:shadow-amber-400/20"
                 >
-                  <div className="p-2 bg-primary/20 rounded-lg group-hover:bg-primary/30 transition-colors">
-                    <feature.icon className="w-5 h-5 text-primary" />
+                  <div className={`relative p-3 bg-gradient-to-br ${feature.color} rounded-xl shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                    <feature.icon className="w-6 h-6 text-white" />
+                    <div className="absolute inset-0 bg-white/20 rounded-xl blur-md animate-pulse" />
                   </div>
-                  <span className="font-semibold text-slate-800 text-sm group-hover:text-primary transition-colors">{feature.text}</span>
+                  <span className="font-bold text-white text-base group-hover:text-amber-400 transition-colors duration-300">{feature.text}</span>
                 </div>
               ))}
             </div>
