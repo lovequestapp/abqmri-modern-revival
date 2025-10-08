@@ -55,7 +55,7 @@ const Services = () => {
             <span className="text-sm font-semibold text-primary">Advanced Diagnostics</span>
           </div>
           <h2 className="text-5xl md:text-6xl font-bold leading-tight">
-            Our Elite <span className="text-gradient">Services</span>
+            Our Elite <span className="text-gradient-logo">Services</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Fortune 500-level diagnostic imaging solutions with cutting-edge technology and expert analysis for personal injury and auto accident cases
@@ -133,7 +133,7 @@ const Services = () => {
           <p className="text-muted-foreground mb-6 text-lg">
             Need help choosing the right diagnostic service?
           </p>
-          <Button variant="premium" size="lg" className="gap-3 px-8 py-6 text-lg font-semibold">
+          <Button variant="logo" size="lg" className="gap-3 px-8 py-6 text-lg font-semibold">
             Speak with a Specialist
             <ArrowRight className="w-6 h-6" />
           </Button>

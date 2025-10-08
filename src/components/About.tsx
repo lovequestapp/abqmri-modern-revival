@@ -30,7 +30,7 @@ const About = () => {
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 2px 2px, hsl(174 72% 56%) 1px, transparent 0)`,
+          backgroundImage: `radial-gradient(circle at 2px 2px, hsl(20 75% 60%) 1px, transparent 0)`,
           backgroundSize: '40px 40px'
         }}></div>
       </div>
@@ -45,7 +45,7 @@ const About = () => {
 
             <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
               Specializing in auto accidents and{" "}
-              <span className="text-gradient">personal injury patients</span>
+              <span className="text-gradient-logo">personal injury patients</span>
             </h2>
 
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">

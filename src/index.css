@@ -8,51 +8,62 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* ABQ MRI Professional Medical Color Scheme */
     --background: 0 0% 100%;
-    --foreground: 220 20% 10%;
+    --foreground: 220 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 10%;
+    --card-foreground: 220 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 10%;
+    --popover-foreground: 220 25% 15%;
 
-    --primary: 174 72% 56%;
+    /* Primary: ABQ MRI Orange (#e8814a) - Logo "abq" color */
+    --primary: 20 75% 60%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 174 72% 70%;
+    --primary-glow: 20 75% 70%;
     
-    --secondary: 220 40% 15%;
+    /* Secondary: ABQ MRI Teal (#4a9e9e) - Logo "MRI" color */
+    --secondary: 180 35% 45%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 20% 96%;
+    /* Muted: Clean medical gray */
+    --muted: 220 15% 95%;
     --muted-foreground: 220 15% 45%;
 
-    --accent: 174 72% 56%;
+    /* Accent: ABQ MRI Teal for highlights */
+    --accent: 180 35% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 174 72% 56%;
+    --border: 220 20% 90%;
+    --input: 220 20% 90%;
+    --ring: 20 75% 60%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
     
-    /* Custom luxury design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(174 72% 56%), hsl(174 72% 70%));
-    --gradient-hero: linear-gradient(135deg, hsl(220 40% 8% / 0.95), hsl(174 72% 56% / 0.05));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 20% 98%));
-    --gradient-scanner: linear-gradient(90deg, transparent, hsl(174 72% 56% / 0.3), transparent);
-    --gradient-mesh: radial-gradient(circle at 50% 50%, hsl(174 72% 56% / 0.1), transparent 70%);
+    /* ABQ MRI Logo-Based Design Tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(20 75% 60%), hsl(20 75% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(180 35% 8% / 0.95), hsl(20 75% 60% / 0.05));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 15% 98%));
+    --gradient-scanner: linear-gradient(90deg, transparent, hsl(20 75% 60% / 0.3), transparent);
+    --gradient-mesh: radial-gradient(circle at 50% 50%, hsl(20 75% 60% / 0.1), transparent 70%);
+    --gradient-medical: linear-gradient(135deg, hsl(20 75% 60%), hsl(180 35% 45%));
+    --gradient-logo: linear-gradient(135deg, hsl(20 75% 60%), hsl(180 35% 45%));
     
-    --shadow-elegant: 0 20px 60px -15px hsl(174 72% 56% / 0.25);
-    --shadow-glow: 0 0 60px hsl(174 72% 70% / 0.3);
-    --shadow-luxury: 0 30px 90px -20px hsl(220 40% 15% / 0.3), 
-                      0 0 40px hsl(174 72% 56% / 0.1);
-    --shadow-scanner: 0 0 80px hsl(174 72% 56% / 0.4),
-                      0 0 120px hsl(174 72% 70% / 0.2),
-                      inset 0 0 60px hsl(174 72% 56% / 0.1);
+    --shadow-elegant: 0 20px 60px -15px hsl(20 75% 60% / 0.25);
+    --shadow-glow: 0 0 60px hsl(20 75% 70% / 0.3);
+    --shadow-luxury: 0 30px 90px -20px hsl(180 35% 20% / 0.3), 
+                      0 0 40px hsl(20 75% 60% / 0.1);
+    --shadow-scanner: 0 0 80px hsl(20 75% 60% / 0.4),
+                      0 0 120px hsl(20 75% 70% / 0.2),
+                      inset 0 0 60px hsl(20 75% 60% / 0.1);
+    --shadow-medical: 0 10px 40px -10px hsl(20 75% 60% / 0.3),
+                      0 0 20px hsl(180 35% 45% / 0.2);
+    --shadow-logo: 0 10px 40px -10px hsl(20 75% 60% / 0.3),
+                    0 0 20px hsl(180 35% 45% / 0.2);
     
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -60,33 +71,34 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 220 40% 8%;
+    /* ABQ MRI Dark Mode - Logo Colors Theme */
+    --background: 180 35% 8%;
     --foreground: 0 0% 98%;
 
-    --card: 220 40% 10%;
+    --card: 180 35% 10%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 220 40% 10%;
+    --popover: 180 35% 10%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 174 72% 56%;
+    --primary: 20 75% 65%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 40% 15%;
+    --secondary: 180 35% 15%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 30% 18%;
-    --muted-foreground: 220 15% 65%;
+    --muted: 180 30% 18%;
+    --muted-foreground: 180 15% 65%;
 
-    --accent: 174 72% 56%;
+    --accent: 180 35% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 50.6%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 30% 20%;
-    --input: 220 30% 20%;
-    --ring: 174 72% 56%;
+    --border: 180 30% 20%;
+    --input: 180 30% 20%;
+    --ring: 20 75% 65%;
   }
 }
 
@@ -110,11 +122,97 @@ All colors MUST be HSL.
     @apply bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent;
   }
   
+  .text-gradient-medical {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-logo {
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+  }
+  
   .glow-effect {
     box-shadow: var(--shadow-glow);
   }
   
   .luxury-shadow {
     box-shadow: var(--shadow-luxury);
+  }
+  
+  .medical-shadow {
+    box-shadow: var(--shadow-medical);
+  }
+  
+  .bg-gradient-medical {
+    background: var(--gradient-medical);
+  }
+  
+  .bg-gradient-logo {
+    background: var(--gradient-logo);
+  }
+  
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .bg-gradient-scanner {
+    background: var(--gradient-scanner);
+  }
+  
+  .bg-gradient-mesh {
+    background: var(--gradient-mesh);
+  }
+  
+  .border-medical {
+    border-color: hsl(var(--primary));
+  }
+  
+  .text-medical-primary {
+    color: hsl(var(--primary));
+  }
+  
+  .text-medical-accent {
+    color: hsl(var(--accent));
+  }
+  
+  .bg-medical-primary {
+    background-color: hsl(var(--primary));
+  }
+  
+  .bg-medical-accent {
+    background-color: hsl(var(--accent));
+  }
+  
+  .hover-medical-primary:hover {
+    background-color: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+  }
+  
+  .hover-medical-accent:hover {
+    background-color: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+  }
+  
+  .text-logo-orange {
+    color: hsl(20 75% 60%);
+  }
+  
+  .text-logo-teal {
+    color: hsl(180 35% 45%);
+  }
+  
+  .bg-logo-orange {
+    background-color: hsl(20 75% 60%);
+  }
+  
+  .bg-logo-teal {
+    background-color: hsl(180 35% 45%);
+  }
+  
+  .border-logo-orange {
+    border-color: hsl(20 75% 60%);
+  }
+  
+  .border-logo-teal {
+    border-color: hsl(180 35% 45%);
   }
 }

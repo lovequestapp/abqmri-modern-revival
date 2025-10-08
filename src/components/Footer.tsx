@@ -62,13 +62,13 @@ const Footer = () => {
               </a>
 
               <a
-                href="mailto:info@abqmri.com"
+                href="mailto:help@abqmri.com"
                 className="flex items-center gap-3 text-secondary-foreground/90 hover:text-primary transition-colors group"
               >
                 <div className="p-2 bg-primary/10 rounded-lg group-hover:bg-primary group-hover:scale-110 transition-all">
                   <Mail className="w-4 h-4 group-hover:text-primary-foreground" />
                 </div>
-                <span>info@abqmri.com</span>
+                <span>help@abqmri.com</span>
               </a>
             </div>
           </div>

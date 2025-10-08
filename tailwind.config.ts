@@ -86,8 +86,8 @@ export default {
           "100%": { transform: "translateY(0)", opacity: "1" },
         },
         "glow-pulse": {
-          "0%, 100%": { boxShadow: "0 0 20px hsl(174 72% 56% / 0.2)" },
-          "50%": { boxShadow: "0 0 40px hsl(174 72% 56% / 0.4)" },
+          "0%, 100%": { boxShadow: "0 0 20px hsl(20 75% 60% / 0.2)" },
+          "50%": { boxShadow: "0 0 40px hsl(20 75% 60% / 0.4)" },
         },
         "float": {
           "0%, 100%": { transform: "translateY(0px)" },
@@ -139,6 +139,282 @@ export default {
             opacity: "0",
           },
         },
+        "mri-tunnel-ring": {
+          "0%": { 
+            transform: "scale(0.8) rotate(0deg)",
+            opacity: "0.8",
+          },
+          "50%": { 
+            transform: "scale(1.1) rotate(180deg)",
+            opacity: "0.4",
+          },
+          "100%": { 
+            transform: "scale(1.3) rotate(360deg)",
+            opacity: "0",
+          },
+        },
+        "mri-scan-line": {
+          "0%": { 
+            transform: "translateY(-50px)",
+            opacity: "0",
+          },
+          "10%": { 
+            opacity: "1",
+          },
+          "90%": { 
+            opacity: "1",
+          },
+          "100%": { 
+            transform: "translateY(50px)",
+            opacity: "0",
+          },
+        },
+        "mri-structure": {
+          "0%, 100%": { 
+            opacity: "0.3",
+            transform: "scale(1)",
+          },
+          "50%": { 
+            opacity: "0.8",
+            transform: "scale(1.1)",
+          },
+        },
+        "mri-field-line": {
+          "0%": { 
+            opacity: "0.2",
+            transform: "scaleY(0.5)",
+          },
+          "50%": { 
+            opacity: "0.6",
+            transform: "scaleY(1.2)",
+          },
+          "100%": { 
+            opacity: "0.2",
+            transform: "scaleY(0.5)",
+          },
+        },
+        "mri-data-particle": {
+          "0%": { 
+            transform: "translateY(0) scale(0.5)",
+            opacity: "0",
+          },
+          "20%": { 
+            opacity: "1",
+          },
+          "80%": { 
+            opacity: "1",
+          },
+          "100%": { 
+            transform: "translateY(-100px) scale(1.5)",
+            opacity: "0",
+          },
+        },
+        "mri-bed-movement": {
+          "0%": { 
+            transform: "translateX(-100%)",
+            opacity: "0",
+          },
+          "10%": { 
+            opacity: "1",
+          },
+          "90%": { 
+            opacity: "1",
+          },
+          "100%": { 
+            transform: "translateX(100%)",
+            opacity: "0",
+          },
+        },
+        "mri-ambient-glow": {
+          "0%, 100%": { 
+            transform: "scale(1)",
+            opacity: "0.3",
+          },
+          "50%": { 
+            transform: "scale(1.2)",
+            opacity: "0.6",
+          },
+        },
+        "mri-3d-tunnel": {
+          "0%": { 
+            transform: "rotateX(60deg) rotateY(0deg) scale(0.8)",
+            opacity: "0.8",
+          },
+          "50%": { 
+            transform: "rotateX(60deg) rotateY(180deg) scale(1.1)",
+            opacity: "0.5",
+          },
+          "100%": { 
+            transform: "rotateX(60deg) rotateY(360deg) scale(1.4)",
+            opacity: "0",
+          },
+        },
+        "mri-orange-scan": {
+          "0%": { 
+            transform: "rotateX(60deg) translateY(-100px)",
+            opacity: "0",
+          },
+          "10%": { 
+            opacity: "1",
+          },
+          "90%": { 
+            opacity: "1",
+          },
+          "100%": { 
+            transform: "rotateX(60deg) translateY(100px)",
+            opacity: "0",
+          },
+        },
+        "mri-3d-structure": {
+          "0%, 100%": { 
+            opacity: "0.4",
+            transform: "rotateX(60deg) scale(1)",
+          },
+          "50%": { 
+            opacity: "0.8",
+            transform: "rotateX(60deg) scale(1.1)",
+          },
+        },
+        "mri-3d-anatomy": {
+          "0%, 100%": { 
+            opacity: "0.3",
+            transform: "rotateX(60deg) scaleY(0.8)",
+          },
+          "50%": { 
+            opacity: "0.7",
+            transform: "rotateX(60deg) scaleY(1.2)",
+          },
+        },
+        "mri-3d-tissue": {
+          "0%, 100%": { 
+            opacity: "0.2",
+            transform: "rotateX(60deg) scale(1)",
+          },
+          "50%": { 
+            opacity: "0.5",
+            transform: "rotateX(60deg) scale(1.05)",
+          },
+        },
+        "mri-3d-field": {
+          "0%": { 
+            opacity: "0.2",
+            transform: "rotateX(60deg) scaleY(0.5)",
+          },
+          "50%": { 
+            opacity: "0.6",
+            transform: "rotateX(60deg) scaleY(1.3)",
+          },
+          "100%": { 
+            opacity: "0.2",
+            transform: "rotateX(60deg) scaleY(0.5)",
+          },
+        },
+        "mri-3d-particle": {
+          "0%": { 
+            transform: "rotateX(60deg) translateY(0) scale(0.5)",
+            opacity: "0",
+          },
+          "20%": { 
+            opacity: "1",
+          },
+          "80%": { 
+            opacity: "1",
+          },
+          "100%": { 
+            transform: "rotateX(60deg) translateY(-120px) scale(1.8)",
+            opacity: "0",
+          },
+        },
+        "mri-3d-bed": {
+          "0%": { 
+            transform: "rotateX(60deg) translateX(-100%)",
+            opacity: "0",
+          },
+          "10%": { 
+            opacity: "1",
+          },
+          "90%": { 
+            opacity: "1",
+          },
+          "100%": { 
+            transform: "rotateX(60deg) translateX(100%)",
+            opacity: "0",
+          },
+        },
+        "mri-3d-lighting": {
+          "0%, 100%": { 
+            opacity: "0.3",
+            transform: "rotateX(60deg) scale(1)",
+          },
+          "50%": { 
+            opacity: "0.6",
+            transform: "rotateX(60deg) scale(1.1)",
+          },
+        },
+        "mri-3d-ambient": {
+          "0%, 100%": { 
+            transform: "scale(1) rotate(0deg)",
+            opacity: "0.4",
+          },
+          "50%": { 
+            transform: "scale(1.3) rotate(180deg)",
+            opacity: "0.7",
+          },
+        },
+        "mri-teal-scan": {
+          "0%": { 
+            transform: "rotateX(60deg) translateY(-100px)",
+            opacity: "0",
+          },
+          "10%": { 
+            opacity: "1",
+          },
+          "90%": { 
+            opacity: "1",
+          },
+          "100%": { 
+            transform: "rotateX(60deg) translateY(100px)",
+            opacity: "0",
+          },
+        },
+        "mri-teal-glow": {
+          "0%, 100%": { 
+            transform: "scale(1) rotate(0deg)",
+            opacity: "0.3",
+          },
+          "50%": { 
+            transform: "scale(1.4) rotate(180deg)",
+            opacity: "0.6",
+          },
+        },
+        "mri-data-stream": {
+          "0%": { 
+            transform: "rotateX(60deg) translateY(0) scaleY(0.5)",
+            opacity: "0",
+          },
+          "20%": { 
+            opacity: "1",
+            transform: "rotateX(60deg) translateY(0) scaleY(1)",
+          },
+          "80%": { 
+            opacity: "1",
+            transform: "rotateX(60deg) translateY(0) scaleY(1)",
+          },
+          "100%": { 
+            transform: "rotateX(60deg) translateY(-80px) scaleY(0.5)",
+            opacity: "0",
+          },
+        },
+        "mri-magnetic-field": {
+          "0%, 100%": { 
+            opacity: "0.2",
+            transform: "rotateX(60deg) scaleY(0.5)",
+          },
+          "50%": { 
+            opacity: "0.6",
+            transform: "rotateX(60deg) scaleY(1.3)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -153,6 +429,27 @@ export default {
         "mri-pulse-ring": "mri-pulse-ring 3s ease-out infinite",
         "particle-float": "particle-float 4s ease-in-out infinite",
         "scanner-line": "scanner-line 2s ease-in-out infinite",
+        "mri-tunnel-ring": "mri-tunnel-ring 4s ease-out infinite",
+        "mri-scan-line": "mri-scan-line 3s linear infinite",
+        "mri-structure": "mri-structure 2s ease-in-out infinite",
+        "mri-field-line": "mri-field-line 3s ease-in-out infinite",
+        "mri-data-particle": "mri-data-particle 4s ease-out infinite",
+        "mri-bed-movement": "mri-bed-movement 6s linear infinite",
+        "mri-ambient-glow": "mri-ambient-glow 4s ease-in-out infinite",
+        "mri-3d-tunnel": "mri-3d-tunnel 5s ease-out infinite",
+        "mri-orange-scan": "mri-orange-scan 3s linear infinite",
+        "mri-3d-structure": "mri-3d-structure 2.5s ease-in-out infinite",
+        "mri-3d-anatomy": "mri-3d-anatomy 2s ease-in-out infinite",
+        "mri-3d-tissue": "mri-3d-tissue 3s ease-in-out infinite",
+        "mri-3d-field": "mri-3d-field 3.5s ease-in-out infinite",
+        "mri-3d-particle": "mri-3d-particle 4s ease-out infinite",
+        "mri-3d-bed": "mri-3d-bed 7s linear infinite",
+        "mri-3d-lighting": "mri-3d-lighting 4s ease-in-out infinite",
+        "mri-3d-ambient": "mri-3d-ambient 5s ease-in-out infinite",
+        "mri-teal-scan": "mri-teal-scan 3s linear infinite",
+        "mri-teal-glow": "mri-teal-glow 4s ease-in-out infinite",
+        "mri-data-stream": "mri-data-stream 4s ease-out infinite",
+        "mri-magnetic-field": "mri-magnetic-field 3s ease-in-out infinite",
       },
     },
   },

@@ -15,8 +15,11 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-lg hover:shadow-xl",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-primary text-primary-foreground hover:bg-primary/95 shadow-[0_0_30px_hsl(174_72%_56%/0.3)] hover:shadow-[0_0_50px_hsl(174_72%_56%/0.5)] hover:scale-105 transition-all duration-300 text-base font-bold",
-        premium: "bg-gradient-to-r from-primary to-primary-glow text-primary-foreground shadow-[0_10px_40px_hsl(174_72%_56%/0.4)] hover:shadow-[0_15px_60px_hsl(174_72%_56%/0.6)] hover:scale-105 transition-all duration-300",
+        hero: "bg-primary text-primary-foreground hover:bg-primary/95 shadow-[0_0_30px_hsl(20_75%_60%/0.3)] hover:shadow-[0_0_50px_hsl(20_75%_60%/0.5)] hover:scale-105 transition-all duration-300 text-base font-bold",
+        premium: "bg-gradient-to-r from-primary to-primary-glow text-primary-foreground shadow-[0_10px_40px_hsl(20_75%_60%/0.4)] hover:shadow-[0_15px_60px_hsl(20_75%_60%/0.6)] hover:scale-105 transition-all duration-300",
+        medical: "bg-gradient-medical text-primary-foreground shadow-medical hover:shadow-[0_15px_60px_hsl(20_75%_60%/0.6)] hover:scale-105 transition-all duration-300 font-semibold",
+        accent: "bg-accent text-accent-foreground hover:bg-accent/90 shadow-[0_10px_40px_hsl(180_35%_45%/0.3)] hover:shadow-[0_15px_60px_hsl(180_35%_45%/0.5)] hover:scale-105 transition-all duration-300",
+        logo: "bg-gradient-logo text-primary-foreground shadow-logo hover:shadow-[0_15px_60px_hsl(20_75%_60%/0.6)] hover:scale-105 transition-all duration-300 font-semibold",
       },
       size: {
         default: "h-10 px-4 py-2",
