@@ -3,7 +3,7 @@ import { ArrowRight, Calendar, Shield, Clock, CheckCircle2, Activity, Star, MapP
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-teal-50 to-slate-100 pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-teal-50 to-slate-100 pt-16 md:pt-20">
       {/* Advanced MRI Scanner Animation with Teal Elements */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
         {/* Enhanced White Overlay with Depth */}
@@ -143,10 +143,10 @@ const Hero = () => {
         <div className="absolute bottom-1/4 right-1/4 w-40 h-40 bg-orange-400/10 rounded-full blur-xl animate-mri-3d-lighting" style={{ animationDelay: '2s' }} />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 py-16">
+      <div className="container mx-auto px-4 relative z-10 py-8 md:py-16">
         <div className="max-w-6xl mx-auto">
           {/* Main Content - Left Aligned */}
-          <div className="text-left space-y-8 animate-fade-in">
+          <div className="text-left space-y-6 md:space-y-8 animate-fade-in">
             {/* Professional Badge */}
             <div className="inline-flex items-center gap-3 px-6 py-3 bg-white/80 border border-primary/30 rounded-full backdrop-blur-md shadow-lg">
               <Activity className="w-5 h-5 text-primary animate-pulse" />
@@ -159,7 +159,7 @@ const Hero = () => {
             </div>
 
             {/* Main Heading */}
-            <div className="space-y-6 max-w-4xl">
+            <div className="space-y-4 md:space-y-6 max-w-4xl">
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.2] tracking-tight text-slate-800">
                 <span className="text-slate-800">Superior Quality &</span>
                 <br />
@@ -186,7 +186,7 @@ const Hero = () => {
             </div>
 
             {/* Contact Info Widgets */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 md:pt-8">
               <div className="flex items-center gap-3 px-6 py-4 bg-white/80 backdrop-blur-sm rounded-xl border border-slate-200 hover:border-primary/50 transition-all duration-300 shadow-lg">
                 <div className="w-12 h-12 bg-gradient-logo rounded-xl flex items-center justify-center">
                   <MapPin className="w-6 h-6 text-white" />
@@ -212,7 +212,7 @@ const Hero = () => {
 
 
             {/* Key Features */}
-            <div className="flex flex-wrap gap-4 pt-8">
+            <div className="flex flex-wrap gap-4 pt-6 md:pt-8">
               {[
                 { icon: Shield, text: "Board Certified Radiologists" },
                 { icon: Clock, text: "Same-Day Results Available" },
