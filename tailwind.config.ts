@@ -93,6 +93,52 @@ export default {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-10px)" },
         },
+        "mri-scan": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(200%)" },
+        },
+        "mri-rotate": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        "mri-pulse-ring": {
+          "0%": { 
+            transform: "scale(0.8)",
+            opacity: "0.8",
+          },
+          "50%": { 
+            transform: "scale(1.2)",
+            opacity: "0.3",
+          },
+          "100%": { 
+            transform: "scale(1.5)",
+            opacity: "0",
+          },
+        },
+        "particle-float": {
+          "0%, 100%": { 
+            transform: "translate(0, 0)",
+            opacity: "0.3",
+          },
+          "50%": { 
+            transform: "translate(20px, -20px)",
+            opacity: "0.8",
+          },
+        },
+        "scanner-line": {
+          "0%": { 
+            transform: "scaleX(0)",
+            opacity: "0",
+          },
+          "50%": { 
+            transform: "scaleX(1)",
+            opacity: "1",
+          },
+          "100%": { 
+            transform: "scaleX(0)",
+            opacity: "0",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -102,6 +148,11 @@ export default {
         "slide-up": "slide-up 0.6s ease-out",
         "glow-pulse": "glow-pulse 2s ease-in-out infinite",
         "float": "float 3s ease-in-out infinite",
+        "mri-scan": "mri-scan 3s linear infinite",
+        "mri-rotate": "mri-rotate 20s linear infinite",
+        "mri-pulse-ring": "mri-pulse-ring 3s ease-out infinite",
+        "particle-float": "particle-float 4s ease-in-out infinite",
+        "scanner-line": "scanner-line 2s ease-in-out infinite",
       },
     },
   },

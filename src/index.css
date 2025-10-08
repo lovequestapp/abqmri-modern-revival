@@ -41,16 +41,22 @@ All colors MUST be HSL.
     
     /* Custom luxury design tokens */
     --gradient-primary: linear-gradient(135deg, hsl(174 72% 56%), hsl(174 72% 70%));
-    --gradient-hero: linear-gradient(135deg, hsl(174 72% 56% / 0.1), hsl(220 40% 15% / 0.05));
-    --gradient-card: linear-gradient(to bottom, hsl(0 0% 100%), hsl(210 20% 98%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 40% 8% / 0.95), hsl(174 72% 56% / 0.05));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 20% 98%));
+    --gradient-scanner: linear-gradient(90deg, transparent, hsl(174 72% 56% / 0.3), transparent);
+    --gradient-mesh: radial-gradient(circle at 50% 50%, hsl(174 72% 56% / 0.1), transparent 70%);
     
     --shadow-elegant: 0 20px 60px -15px hsl(174 72% 56% / 0.25);
     --shadow-glow: 0 0 60px hsl(174 72% 70% / 0.3);
     --shadow-luxury: 0 30px 90px -20px hsl(220 40% 15% / 0.3), 
                       0 0 40px hsl(174 72% 56% / 0.1);
+    --shadow-scanner: 0 0 80px hsl(174 72% 56% / 0.4),
+                      0 0 120px hsl(174 72% 70% / 0.2),
+                      inset 0 0 60px hsl(174 72% 56% / 0.1);
     
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-scanner: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .dark {
