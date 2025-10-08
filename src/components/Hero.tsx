@@ -3,7 +3,7 @@ import { ArrowRight, Calendar, Shield, Clock, CheckCircle2, Activity, Star, MapP
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 pt-16 md:pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 pt-8 md:pt-20">
       {/* Advanced MRI Scanner Animation with Teal Elements */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
         {/* Premium Royal Overlay with Sophisticated Depth */}
@@ -153,10 +153,10 @@ const Hero = () => {
         <div className="absolute bottom-1/4 right-1/4 w-40 h-40 bg-orange-400/10 rounded-full blur-xl animate-mri-3d-lighting" style={{ animationDelay: '2s' }} />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 py-8 md:py-16">
+      <div className="container mx-auto px-4 relative z-10 py-4 md:py-16">
         <div className="max-w-6xl mx-auto">
           {/* Main Content - Left Aligned */}
-          <div className="text-left space-y-6 md:space-y-8 animate-fade-in">
+          <div className="text-left space-y-4 md:space-y-8 animate-fade-in">
             {/* Premium Royal Badge */}
             <div className="inline-flex items-center gap-4 px-8 py-4 bg-gradient-to-r from-slate-800/90 via-slate-700/90 to-slate-800/90 border border-amber-400/30 rounded-2xl backdrop-blur-xl shadow-2xl shadow-amber-400/20 hover:shadow-amber-400/30 transition-all duration-500 group">
               <div className="relative">
